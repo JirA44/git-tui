@@ -1,44 +1,40 @@
 # git-tui
 
-> **Analyseur Git en terminal** — `git log` devient une table lisible en 1 commande.
+## Français — présentation
 
-[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](https://python.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![TUI](https://img.shields.io/badge/TUI-Rich%20%2B%20Click-purple)](#)
+**git-tui** transforme l’historique Git d’un dépôt en tableau lisible dans le terminal. Il affiche des totaux de commits, fichiers et auteurs, avec une vue synthétique utile pour une rétrospective ou un audit rapide.
 
-### En 1 ligne
+### À quoi ça sert, et pourquoi ?
+
+`git shortlog` donne une sortie brute ; git-tui facilite la lecture et la comparaison sans devoir reformater les résultats à la main.
+
+### Exemples
+
 ```bash
 pip install -e .
 git-tui .
 git-tui D:/Code/forge-cli --since 2026-01-01
 ```
 
----
+## English — overview
 
-## Présentation
+**git-tui** turns a Git repository’s history into a readable terminal table with commit, file and author totals. It is useful for quick project reviews, contribution summaries and onboarding checks.
 
-| Besoin | Résultat |
-|---|---|
-| **Rétro sprint** | Table des auteurs triée par commits, sans `git shortlog` illisible |
-| **Audit onboarding** | Vérifie en 1s si un repo a 4 auteurs actifs ou 1 seul |
-| **Portfolio / soutenance** | Screenshot du tableau pour slide “contribution” |
+### What is it for, and why use it?
 
-### Exemple
-```
-$ git-tui D:/Code/forge-cli
-╭──────────────────────────────╮
-│ Commits: 3  Fichiers: 12  Auteurs: 1 │
-╰──────────────────────────────╯
-┌─────────────────┬─────────┐
-│ Auteur          │ Commits │
-├─────────────────┼─────────┤
-│ Forge           │       3 │
-└─────────────────┴─────────┘
+Compared with raw `git shortlog` output, git-tui provides a compact view that is easier to scan and reuse in a report.
+
+### Examples
+
+```bash
+pip install -e .
+git-tui .
+git-tui D:/Code/forge-cli --since 2026-01-01
 ```
 
----
+## Installation et utilisation (français)
 
-## Installation
+
 
 ```bash
 git clone https://github.com/JirA44/git-tui
